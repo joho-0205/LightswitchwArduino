@@ -37,7 +37,7 @@ while True:
     index = np.argmax(prediction)
     print(index)
     if index == 0 and wake==0:
-        print("Not on bed")  # 使用 text() 函式，顯示文字
+        print("Not on bed")
         '''try:
             if sound.is_alive():
                 sound.stop()
@@ -64,6 +64,6 @@ while True:
     time.sleep(5)
 
     if cv2.waitKey(1) == ord('q'):
-        break    # 按下 q 鍵停止
+        break
 cap.release()
 cv2.destroyAllWindows()
