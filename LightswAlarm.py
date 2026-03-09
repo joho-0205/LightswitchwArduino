@@ -14,7 +14,6 @@ np.set_printoptions(suppress=True)
 
 # Load the model
 model = load_model("keras_Model.h5", compile=False)
-lights = 1 #0==off, 1==on
 wake = 0
 
 
